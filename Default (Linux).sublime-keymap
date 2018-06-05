@@ -1,0 +1,65 @@
+[
+	// #########################################################################
+    // Emacs Pro Essentials keybind overrides
+    // #########################################################################
+    { "keys": ["ctrl+z"], "command": "undo" },
+    { "keys": ["ctrl+shift+z"], "command": "redo" },
+    { "keys": ["ctrl+c"], "command": "copy" },
+    { "keys": ["ctrl+shift+v"], "command": "paste" },
+    // { "keys": ["ctrl+s"], "command": "save" },
+    // type ":" for goto line or "@" for goto symbol
+    {
+        "keys": ["alt+."],
+        "command": "goto_definition"
+    },
+    {
+        "keys": ["alt+shift+-"],
+        "command": "redo"
+    },
+    {
+        "keys": ["ctrl+x", "ctrl+f"], 
+        "command": "prompt_open_file",
+    },
+    {
+        "keys": ["ctrl+shift+a"], 
+        "command": "select_all",
+    },
+    {
+        "keys": ["ctrl+shift+n"], 
+        "command": "new_file",
+    },
+    {
+        "keys": ["ctrl+x", "ctrl+b"], 
+        "command": "show_overlay",
+        "args": {"overlay": "goto", "show_files": true}
+    },
+    {
+        "keys": ["alt+n"],
+        "command": "scroll_lines", "args": {"amount": -10},
+    },
+    {
+        "keys": ["alt+p"],
+        "command": "scroll_lines", "args": {"amount": 10},
+    },
+    // #########################################################################
+    // AceJump extra keybindings
+    // #########################################################################
+    {
+        "keys": ["alt+j","alt+j"],
+        "command": "ace_jump_word"
+    },
+    // {
+    //     "keys": ["alt+j","alt+l"],
+    //     "command": "ace_jump_line"
+    // }
+    {
+        "keys": ["alt+j","alt+l"], 
+        "command": "show_overlay", 
+        "args": {"overlay":"goto", "show_files" : false, "text": ":"},
+    },
+    {
+        "keys": ["alt+j","alt+s"], 
+        "command": "show_overlay", 
+        "args": {"overlay":"goto", "show_files" : false, "text": "@"},
+    },
+]

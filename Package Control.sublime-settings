@@ -1,0 +1,24 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"AceJump",
+		"CMake",
+		"Emacs Pro Essentials",
+		"gruvbox",
+		"LSP",
+		"Markdown Extended",
+		"MarkdownPreview",
+		"Monokai Extended",
+		"Package Control",
+		"Python Improved",
+		"Rust Enhanced",
+		"SublimeLinter",
+		"SublimeLinter-flake8",
+		"SublimeLinter-pyflakes",
+		"TodoReview"
+	]
+}

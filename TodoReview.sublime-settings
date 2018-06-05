@@ -1,0 +1,6 @@
+{
+	"patterns": {
+		"TODO": "TODO[\\s]*?:[\\s]*(?P<todo>.*)$",
+		"SETPARAM": "SETPARAM[\\s]*?:[\\s]*(?P<setparam>.*)$",
+	},
+}
