@@ -25,6 +25,10 @@
         "command": "select_all",
     },
     {
+        "keys": ["ctrl+shift+l"],
+        "command": "split_selection_into_lines"
+    },
+    {
         "keys": ["ctrl+shift+n"], 
         "command": "new_file",
     },
