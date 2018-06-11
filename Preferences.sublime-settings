@@ -2,12 +2,6 @@
 	"color_scheme": "Packages/Monokai Extended/Monokai Extended.tmTheme",
 	"font_face": "Monospace",
 	"font_size": 10,
-	"ignored_packages":
-	[
-		"Rust",
-		"SublimeLinter-flake8",
-		"Vintage"
-	],
 	"rulers":
 	[
 		80,
