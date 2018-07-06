@@ -86,6 +86,7 @@ SublimeLinter.sublime-settings:
 
 Syntax Definition:
 
+- C Improved
 - C++ Starting Kit
 - C++ 11
 
@@ -99,8 +100,3 @@ Misc:
 - https://packagecontrol.io/packages/SublimeGDB
 - https://packagecontrol.io/packages/CMake
 - https://packagecontrol.io/packages/CTags
-
-## Syntax definitions
-
-https://packagecontrol.io/packages/C%2B%2B11
-https://packagecontrol.io/packages/C%2B%2B%20Starting%20Kit
