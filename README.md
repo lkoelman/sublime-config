@@ -1,5 +1,9 @@
 This is my personal Sublime Text configuration.
 
+# Installation
+
+Check out this repository in your Sublime Text config folder under User packages. This is `~/.config/sublime-text-3/Packages/User` in linux.
+
 # Useful Extensions
 
 Not all of these are installed.
@@ -59,7 +63,7 @@ SublimeLinter.sublime-settings:
             "gutter_marks": "theme-simple"
         }
     }
-    
+
 }
 ```
 
