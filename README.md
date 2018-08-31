@@ -2,7 +2,9 @@ This is my personal Sublime Text configuration.
 
 # Installation
 
-Check out this repository in your Sublime Text config folder under User packages. This is `~/.config/sublime-text-3/Packages/User` in linux.
+Check out this repository in your Sublime Text config folder under User packages. 
+- Under Linux this is `~/.config/sublime-text-3/Packages/User`
+- Under Mac OS this is `~/Library/Application Support/Sublime Text 3/Packages/User`
 
 # Useful Extensions
 
