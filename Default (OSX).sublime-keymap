@@ -36,11 +36,11 @@
         "args": {"overlay": "goto", "show_files": true}
     },
     {
-        "keys": ["ctrl+alt+v"],
+        "keys": ["ctrl+v"],
         "command": "scroll_lines", "args": {"amount": -10},
     },
     {
-        "keys": ["shift+alt+v"],
+        "keys": ["alt+v"],
         "command": "scroll_lines", "args": {"amount": 10},
     },
     {
