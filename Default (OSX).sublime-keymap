@@ -1,0 +1,75 @@
+[
+    // #########################################################################
+    // Emacs Pro Essentials keybind overrides
+    // #########################################################################
+    // Goto Symbol
+    // Default: ctrl+x, g = goto line
+    // type ":" for goto line or "@" for goto symbol
+    {
+        "keys": ["alt+g"], 
+        "command": "show_overlay", 
+        "args": {"overlay":"goto", "show_files" : false, "text": ""},
+    },
+    {
+        "keys": ["alt+."],
+        "command": "goto_definition"
+    },
+    {
+        "keys": ["super+g"], 
+        "command": "show_overlay", 
+        "args": {"overlay":"goto", "show_files" : false, "text": ""},
+    },
+    {
+        "keys": ["alt+."],
+        "command": "goto_definition" },
+    {
+        "keys": ["alt+shift+-"],
+        "command": "redo"
+    },
+    {
+        "keys": ["ctrl+x", "ctrl+f"], 
+        "command": "prompt_open_file",
+    },
+    {
+        "keys": ["ctrl+x", "ctrl+b"], 
+        "command": "show_overlay",
+        "args": {"overlay": "goto", "show_files": true}
+    },
+    {
+        "keys": ["ctrl+alt+v"],
+        "command": "scroll_lines", "args": {"amount": -10},
+    },
+    {
+        "keys": ["shift+alt+v"],
+        "command": "scroll_lines", "args": {"amount": 10},
+    },
+    {
+        "keys": ["alt+n"],
+        "command": "scroll_lines", "args": {"amount": -10},
+    },
+    {
+        "keys": ["alt+p"],
+        "command": "scroll_lines", "args": {"amount": 10},
+    },
+    // #########################################################################
+    // AceJump extra keybindings
+    // #########################################################################
+    {
+        "keys": ["alt+j","alt+j"],
+        "command": "ace_jump_word"
+    },
+    // {
+    //     "keys": ["alt+j","alt+l"],
+    //     "command": "ace_jump_line"
+    // },
+    {
+        "keys": ["alt+j","alt+l"], 
+        "command": "show_overlay", 
+        "args": {"overlay":"goto", "show_files" : false, "text": ":"},
+    },
+    {
+        "keys": ["alt+j","alt+s"], 
+        "command": "show_overlay", 
+        "args": {"overlay":"goto", "show_files" : false, "text": "@"},
+    }
+]
