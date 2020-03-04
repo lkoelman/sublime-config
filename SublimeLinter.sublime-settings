@@ -3,15 +3,16 @@
     "debug": false, // Set to true to print extra information in the console.
     "paths": {
         "linux": [],
-        "osx": ["/Users/luye/anaconda/bin"],
+        "osx": ["/Users/luye/anaconda/bin"], // "/Users/luye/anaconda/bin"
         "windows": []
     },
     "linters": {
         // Flake8 = PEP8 style guide + pyflakes program errors
         // example config: https://packagecontrol.io/packages/Python%20Flake8%20Lint
         "flake8": {
-            "disable": false,        // pyflakes should be enough
-            "args": ["--ignore=E,W191,W293"],
+            "disable": false,
+            "executable": ["python", "-m", "flake8"],
+            "args": ["--ignore=W191,W293,E,E128,E126,E303"],
             // What to lint
             // "ignore": "E,E114,E111,E501,W293",
             "pyflakes": true,       // turn on pyflakes error lint
@@ -19,10 +20,42 @@
             "pydocstyle": false,    // turn on pydocstyle error lint
             "naming": false,        // turn on naming error lint
             "debugger": true,       // turn on debugger error lint
-            // Look & Feel
-            "gutter_marks": "theme-simple",
+
             // The current working dir the lint job will run in.
-            "working_dir": "${file_path}"
+            "working_dir": "${file_path}",
+
+            // run flake8 lint on file saving
+            "lint_on_save": true,
+            // run flake8 lint on file loading
+            "lint_on_load": true,
+
+            // popup a dialog of detected conditions?
+            "popup": true,
+            // highlight detected conditions?
+            "highlight": true,
+
+            // highlight type:
+            // - "line" to highlight whole line
+            // - "error" to highlight error only
+            "highlight_type": "error",
+
+            // show a mark in the gutter on all lines with errors/warnings:
+            // - "dot", "circle" or "bookmark" to show marks
+            // - "theme-alpha", "theme-bright", "theme-dark", "theme-hard" or "theme-simple" to show icon marks
+            // - "" (empty string) to do not show marks
+            "gutter_marks": "theme-simple",
+
+            // report successfull (passed) lint
+            "report_on_success": false,
+
+            // set python interpreter (lint files for python >= 2.7):
+            // - 'internal' for use internal Sublime Text interpreter (2.6)
+            // - 'auto' for search default system python interpreter (default value)
+            // - absolute path to python interpreter for define another one
+            //   use platform specific notation, i.e. "C:\\Anaconda\\envs\\py33\\python.exe"
+            //   for Windows or then "/home/whatever/pythondist/python" for Unix
+            "python_interpreter": "auto",
+
         },
         // Pyflakes = program & syntax errors only
         "pyflakes": {
